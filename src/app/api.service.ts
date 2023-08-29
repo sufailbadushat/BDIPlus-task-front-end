@@ -24,4 +24,8 @@ export class ApiService {
   deleteById(id: number): Observable<void> {
     return this.http.delete<void>(`http://localhost:8080/api/task/delete/${id}`);
   }
+
+  updateTask=(id: number, data:any)=> {
+    return this.http.put(`http://localhost:8080/api/task/update/${id}`, data);
+  }
 }

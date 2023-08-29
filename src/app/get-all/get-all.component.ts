@@ -40,5 +40,9 @@ export class GetAllComponent {
     
   }
   
+  update(id:any){
+    localStorage.setItem('taskId', id);
+    this.router.navigate([`/task/update/`,id]);
+  }
 
 }
