@@ -1,0 +1,25 @@
+
+<div class="container bg-light mt-5">
+    <div class="row">
+        <div class="col-12 col-sm-12 div-md-12 col-lg-12 div-xl-12 div-xxl-12">
+            <div class="row g-3 mt-4 ">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center mb-5">
+                    <h2 class="text-dark" class="font-monospace fw-bolder">Create Task</h2>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label fw-bold font-monospace ">Title</label>
+                    <input name="title" [(ngModel)]="title" type="text" placeholder="title" class="form-control">
+                </div>
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label fw-bold font-monospace ">Description</label>
+                    <textarea name="description" [(ngModel)]="description" id="" cols="30" rows="4" class="form-control" placeholder="description"></textarea>
+                </div>
+                    
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center mt-5">
+                    <button (click)="readValue()" class="btn btn-dark fw-bold font-monospace py-1">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

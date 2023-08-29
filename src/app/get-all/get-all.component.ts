@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-get-all',
@@ -7,7 +8,7 @@ import { ApiService } from '../api.service';
   styleUrls: ['./get-all.component.css']
 })
 export class GetAllComponent {
-  constructor(private api: ApiService) {
+  constructor(private api: ApiService , private router:Router) {
     api.getAllData().subscribe(
       (response:any) => {
           this.data=response
@@ -18,4 +19,8 @@ export class GetAllComponent {
   }
 
   data: any = []
+
+  create(){
+
+  }
 }

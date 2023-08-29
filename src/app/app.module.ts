@@ -7,11 +7,13 @@ import { GetAllComponent } from './get-all/get-all.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CreateComponent } from './create/create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GetAllComponent
+    GetAllComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
